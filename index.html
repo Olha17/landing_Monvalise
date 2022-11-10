@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body class="ms-auto me-auto">
+    <header>
+      <div class="ontop text-center fw-normal s16">
+        <div class="position-relative top-5">
+          <img src="./icon/ok.png" />
+          <img src="./icon/image18.png" />
+          <span>Брендовий верхній одяг від 899 грн</span>
+        </div>
+      </div>
+      <div class="d-flex flex-column mt-4 text-center h136 ms-auto me-auto w1320">
+        <div class="menu-search d-flex flex-row align-items-center justify-content-center mb-3">
+          <div class="img-column flex-column">
+            <img src="./icon/monvalise.png" />
+          </div>
+          <div class="search-column col flex-column ">
+            <input class="position-relative ps-5" placeholder="Знайти речі або бренди">
+            <img class="position-relative search-icon" src="./icon/search.svg"></i>
+            </input>
+            <button class="me-2">Додати товар</button>
+            <span class="fw-semibold"> Укр <i class="bi bi-chevron-down grayclr s10"></i></span>
+              <img class="grayclr s16 ms-3" src="./icon/heart.svg" width="16">
+              <span class="like-number fw-semibold">8</span>
+            <img class="grayclr s16" src="./icon/message.svg" width="16">
+            <span class="message-number">3</span>
+            <img class="grayclr s16" src="./icon/cart.svg" width="16">
+            <span class="cart-number me-3 fw-semibold">3</span>
+            
+            <img src="./icon/avatar.png">
+            <i class="bi bi-chevron-down s10"></i>
+            </img>
+          </div>
+        </div>
+        <hr class="hr-nav ms-0">
+        <div class="menu-nav mb-3">
+          <div class="d-flex justify-content-between fw-semibold">
+            <span class="ps-3 pe-3">ГОЛОВНА</span>
+            <span class="ps-3 pe-3">КАТАЛОГ</span>
+            <span class="ps-3 pe-3">ЖІНКАМ</span>
+            <span class="ps-3 pe-3">ЧОЛОВІКАМ</span>
+            <span class="ps-3 pe-3">ДИТЯЧІ РЕЧІ</span>
+            <span class="ps-3 pe-3">АУКЦІОН</span>
+            <span class="ps-3 pe-3">БРЕНДИ</span>
+            <span class="ps-3 pe-3">АКЦІЇ</span>
+            <span class="ps-3 pe-3">АУТЕНТИФІКАЦІЯ</span>
+            <span class="ps-3 pe-3">БЛОГ</span>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-0">
+    </header>
+    <section class="ms-auto me-auto w1320">
+      <p class="mt-4">Головна <span class="grayclr">/ Каталог одягу</span>
+      </p>
+      <h3 class="mt-4">Каталог одягу</h3>
+      <div class="d-flex flex-row justify-content-between align-items-baseline">
+        <h4 class="mt-4 s22 grayclr">Фільтри</h4>
+        <p class="lightgrayclr">Сортувати за: <span class="ms-2 sortbtn">За замовчуванням </span>
+          <i class="bi bi-chevron-down sortIcon"></i>
+        </p>
+      </div>
+      <div class="mt-4 d-flex flex-row">
+        <aside>
+          <button class="filter-menu border-0 text-start">Категорії</button>
+          <div class="panel">
+            <p></p>
+          </div>
+          <button class="filter-menu active border-0 text-start">Ціна</button>
+          <div class="panel block">
+            <div class="sliders_control position-relative">
+              <input class="position-absolute" id="fromSlider" type="range" value="980" min="0" max="50000" />
+              <input class="position-absolute" id="toSlider" type="range" value="20465" min="0" max="50000" />
+            </div>
+            <div class="form_control position-relative d-flex justify-content-between">
+              <div class="form_control_container">
+                <div class="form_control_container__time grayclr s10">Від</div>
+                <input class="form_control_container__time__input s12 border-0 fw-bolder" type="number" id="fromInput" value="980" min="0" max="50000" />
+                <hr>
+              </div>
+              <div class="form_control_container">
+                <div class="form_control_container__time grayclr s10">До</div>
+                <input class="form_control_container__time__input s12 border-0 fw-bolder" type="number" id="toInput" value="20465" min="0" max="50000" />
+                <hr>
+              </div>
+            </div>
+          </div>
+          <button class="filter-menu border-0 text-start">Продавець</button>
+          <div class="panel">
+            <p></p>
+          </div>
+          <button class="filter-menu border-0 text-start">Бренд</button>
+          <div class="panel">
+            <p></p>
+          </div>
+          <button class="filter-menu active border-0 text-start">Стать</button>
+          <div class="panel block">
+            <label class="d-flex justify-content-between position-relative box">Жінкам <span class="grayclr">(64)</span>
+              <input class="position-absolute" type="checkbox" checked="checked" type="checkbox">
+              <span class="checkmark position-absolute"></span>
+            </label>
+            <label class="d-flex justify-content-between position-relative box">Чоловікам <span class="grayclr">(16)</span>
+              <input class="position-absolute" type="checkbox" checked="checked">
+              <span class="checkmark position-absolute"></span>
+            </label>
+            <label class="d-flex justify-content-between position-relative box">Унісекс <span class="grayclr">(24)</span>
+              <input class="position-absolute" type="checkbox">
+              <span class="checkmark position-absolute"></span>
+          </div>
+          <button class="filter-menu border-0 text-start">Розмір</button>
+          <div class="panel">
+            <p></p>
+          </div>
+          <button class="filter-menu border-0 text-start">Колір</button>
+          <div class="panel">
+            <p></p>
+          </div>
+          <button class="filter-menu border-0 text-start">Матеріал</button>
+          <div class="panel">
+            <p></p>
+          </div>
+          <button class="filter-menu border-0 text-start">Сезон</button>
+          <div class="panel">
+            <p></p>
+          </div>
+          <button class="filter-menu border-0 text-start">Стиль</button>
+          <div class="panel">
+            <p></p>
+          </div>
+        </aside>
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 g-4 ms-3">
+            <div class="col">
+              <div class="card ">
+                <div class="card-col-top text-center">
+                <img src="./icon/like.png" class="bi-heart d-flex justify-content-right ms-auto" alt="like">
+                <img src="./img/Pants.png" class="card-img-top" alt="pants">
+                <p class="card-top-text fw-bolder">ТОП</p>              
+              </div>
+
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">LOUIS VUITTON</h5>
+                  <p class="card-text fw-bolder">Темно-сині джинси Louis Vuitton</p>
+                  <div class="d-flex">
+                    <ul class="col list-unstyled">
+                    <li class="grayclr"><s>5 499</s></li>
+                    <li class="card-actual-price">3 799</li>
+                  </ul>
+                  <ul class="col list-unstyled text-end">
+                    <li><i class="bi bi-geo-alt-fill"></i>Херсон</li>
+                    <li class="brand fw-bolder">
+                      <img src="./icon/LoveBrand.png">LoveBrand</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card ">
+                <div class="card-col-top text-center">
+                <img src="./icon/like.png" class="bi-heart d-flex justify-content-right ms-auto" alt="like">
+                <img src="./img/Black jacket.png" class="card-img-top" alt="Black jacket">
+                <p class="card-top-text">ТОП</p>              
+              </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">THOM BROWNE</h5>
+                  <p class="card-text fw-bolder">Чорний піджак Thom Browne</p>
+                  <div class="d-flex">
+                    <ul class="col list-unstyled">
+                    <li class="grayclr"><s>11 999</s></li>
+                    <li class="card-actual-price">8 599</li>
+                  </ul>
+                  <ul class="col list-unstyled text-end">
+                    <li><i class="bi bi-geo-alt-fill"></i>Хмельницький</li>
+                    <li class="brand fw-bolder">
+                      <img src="./icon/Sell_For_Men.png">Sell_For_Men</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card ">
+                <div class="card-col-top text-center">
+                <img src="./icon/like.png" class="bi-heart d-flex justify-content-right ms-auto" alt="like">
+                <img src="./img/Wool jacket.png" class="card-img-top" alt="Wool jacket">            
+              </div>
+
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">CANALI</h5>
+                  <p class="card-text fw-bolder">Вовняний піджак Canali</p>
+                  <div class="d-flex">
+                    <ul class="col list-unstyled">
+                    <li class="grayclr"><s>4 999</s></li>
+                    <li class="card-actual-price">2 599</li>
+                  </ul>
+                  <ul class="col list-unstyled text-end">
+                    <li><i class="bi bi-geo-alt-fill"></i>Хмельницький</li>
+                    <li class="brand fw-bolder">
+                      <img src="./icon/Sell_For_Men.png">Sell_For_Men</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card ">
+                <div class="card-col-top text-center">
+                <img src="./icon/like.png" class="bi-heart d-flex justify-content-right ms-auto" alt="like">
+                <img src="./img/Clutch bag.png" class="card-img-top" alt="clutch bag">
+                <p class="card-top-text fw-semibold">ТОП</p>              
+              </div>
+
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">LOUIS VUITTON</h5>
+                  <p class="card-text fw-bolder">Клатч Louis Vuitton Limelight</p>
+                  <div class="d-flex">
+                    <ul class="col list-unstyled">
+                    <li class="grayclr"><s>4 999</s></li>
+                    <li class="card-actual-price">3 499</li>
+                  </ul>
+                  <ul class="col list-unstyled text-end">
+                    <li><i class="bi bi-geo-alt-fill"></i>Дніпро</li>
+                    <li class="brand fw-bolder">
+                      <img src="./icon/Brandear.png">Brandear</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card ">
+                <div class="card-col-top text-center">
+                <img src="./icon/like.png" class="bi-heart d-flex justify-content-right ms-auto" alt="like">
+                <img src="./img/Bag.png" class="card-img-top" alt="Bag">
+                <p class="card-organic-text fw-semibold position-absolute">organic</p>              
+              </div>
+
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">ELENA GHISELINI</h5>
+                  <p class="card-text fw-bolder">Сумка з декором Elena Ghisellini</p>
+                  <div class="d-flex">
+                    <ul class="col list-unstyled">
+                    <li class="grayclr"><s>1 999</s></li>
+                    <li class="card-actual-price">1 599</li>
+                  </ul>
+                  <ul class="col list-unstyled text-end">
+                    <li><i class="bi bi-geo-alt-fill"></i>Дніпро</li>
+                    <li class="brand fw-bolder">
+                      <img src="./icon/Brandear.png">Brandear</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card ">
+                <div class="card-col-top text-center">
+                <img src="./icon/like.png" class="bi-heart d-flex justify-content-right ms-auto" alt="like">
+                <img src="./img/Bomber.png" class="card-img-top" alt="bomber">
+              </div>
+
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">ACNE</h5>
+                  <p class="card-text fw-bolder">Бомбер Acne на блискавці</p>
+                  <div class="d-flex">
+                    <ul class="col list-unstyled">
+                    <li class="grayclr"><s>5 999</s></li>
+                    <li class="card-actual-price">4 199</li>
+                  </ul>
+                  <ul class="col list-unstyled text-end">
+                    <li><i class="bi bi-geo-alt-fill"></i>Київ</li>
+                    <li class="brand fw-bolder">
+                      <img src="./icon/Alexalex.png">Alexalex</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card ">
+                <div class="card-col-top text-center">
+                <img src="./icon/like.png" class="bi-heart d-flex justify-content-right ms-auto" alt="like">
+                <img src="./img/Dress.png" class="card-img-top" alt="dress">
+              </div>
+
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">GUCCI</h5>
+                  <p class="card-text fw-bolder">Довга сукня Gucci</p>
+                  <div class="d-flex">
+                    <ul class="col list-unstyled">
+                    <li class="grayclr"><s>11 999</s></li>
+                    <li class="card-actual-price">8 599</li>
+                  </ul>
+                  <ul class="col list-unstyled text-end">
+                    <li><i class="bi bi-geo-alt-fill"></i>Рівне</li>
+                    <li class="brand fw-bolder">
+                      <img src="./icon/SellBuy.png">SellBuy</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card ">
+                <div class="card-col-top text-center">
+                <img src="./icon/like.png" class="bi-heart d-flex justify-content-right ms-auto" alt="like">
+                <img src="./img/Orange bomber.png" class="card-img-top" alt="Orange bomber">
+              </div>
+
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">CHANEL</h5>
+                  <p class="card-text fw-bolder">Помаранчевий бомбер Woolrich</p>
+                  <div class="d-flex">
+                    <ul class="col list-unstyled">
+                    <li class="grayclr"><s>1 999</s></li>
+                    <li class="card-actual-price">1 599</li>
+                  </ul>
+                  <ul class="col list-unstyled text-end">
+                    <li><i class="bi bi-geo-alt-fill"></i>Кропивницький</li>
+                    <li class="brand fw-bolder">
+                      <img src="./icon/Deeva_Sofia.png">Deeva_Sofia</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card ">
+                <div class="card-col-top text-center">
+                <img src="./icon/like.png" class="bi-heart d-flex justify-content-right ms-auto" alt="like">
+                <img src="./img/Coat.png" class="card-img-top" alt="coat">
+              </div>
+
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">HACHE</h5>
+                  <p class="card-text fw-bolder">Салатове пальто Hache</p>
+                  <div class="d-flex">
+                    <ul class="col list-unstyled">
+                    <li class="grayclr"><s>5 999</s></li>
+                    <li class="card-actual-price">4 199</li>
+                  </ul>
+                  <ul class="col list-unstyled text-end">
+                    <li><i class="bi bi-geo-alt-fill"></i>Київ</li>
+                    <li class="brand fw-bolder">
+                      <img src="./icon/LoveBrand.png">LoveBrand</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          
+          </div>
+        </main>
+      </div>
+
+      <div class="pagesbtn s12">
+        <button class="switchBtn">Попередня</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button class="switchBtn">Наступна</button>
+      </div>
+    </section>
+    <footer>
+      <div class="bottom d-flex flex-row ms-auto me-auto w1320 fw-semibold">
+        <ul class="col flex-column list-unstyled">
+          <li>Довідка для покупців</li>
+          <li>Отримати підтримку</li>
+          <li>Як купувати</li>
+          <li>Як залишити корисний відгук</li>
+          <li>Програма Захисту Покупців</li>
+          <li>Рекомендації з безпечних покупок</li>
+        </ul>
+        <ul class="col flex-column list-unstyled">
+          <li>Довідка для продавців</li>
+          <li>Як почати продавати</li>
+          <li>Тарифи</li>
+          <li>Угода користувача</li>
+          <li>Політика конфіденційності</li>
+          <li>Правила користування порталом</li>
+          <li>Бонусна програма</li>
+        </ul>
+        <ul class="col flex-column list-unstyled">
+          <li>Про нас</li>
+          <li>Довідка та FAQ</li>
+          <li>Захист легальності контенту</li>
+          <li>Адміністрація</li>
+          <li>Вакансії</li>
+        </ul>
+        <ul class="col flex-column list-unstyled">
+          <li>Мобільний додаток</li>
+          <img src="./icon/Vector.png">
+        </ul>
+      </div>
+      <hr class="ms-auto me-auto w1320">
+      <div class="bottom-text">
+        <p class="ms-auto me-auto w1320">© 2022 Monvalise</p>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
